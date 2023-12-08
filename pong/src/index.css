@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	overflow: hidden; 
+	position: relative;
+	background-color: black;
+  }
+  
+.video-background {
+	position: fixed;
+	z-index: -1;
+	opacity: 0;
+  }
+
+  @keyframes slideIn {
+	0% {
+	  left: -600px;
+	  box-shadow: 0 0 1000px #00ff00;
+	}
+	100% {
+	  left: 10vw;
+	}
+  }

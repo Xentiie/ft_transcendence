@@ -1,0 +1,39 @@
+{
+  "emits": [
+    {
+      "name": "receive_message",
+      "desc": "New message received",
+      "data": {
+        "username": {
+          "desc": "The user's username",
+          "type": "string"
+        },
+        "conversation_id": {
+          "desc": "The message's conversation's id",
+          "type": "number"
+        },
+        "message": {
+          "desc": "The message's content",
+          "type": "string"
+        }
+      }
+    }
+  ],
+
+  "receives": [
+    {
+      "name": "send_message",
+      "desc": "New message sent",
+      "data": {
+        "message": {
+          "desc": "The message's content",
+          "type": "string"
+        },
+        "conversation_id": {
+          "desc": "The message's conversation's id",
+          "type": "number"
+        }
+      }
+    }
+  ]
+}

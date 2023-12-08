@@ -1,0 +1,16 @@
+Pour voir tout les //TODO dans les fichiers:
+
+find ./backend/src ./pong/src -name '*.ts' -or -name '*.tsx' | tr '\n' ' ' | xargs grep "TODO"
+
+
+conversations:
+    different types d'acces:
+        public, private, protected.
+    protected = mdp requis
+
+    hasher le mdp
+
+    ne pas afficher les conv privés dans la liste des conversations (api/conversations)
+
+    inviter un user dans une conversation
+

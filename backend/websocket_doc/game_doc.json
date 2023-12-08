@@ -1,0 +1,79 @@
+{
+  "emits": [
+    {
+      "name": "start",
+      "desc": "Game found and started",
+      "data": {
+        "opponent": {
+          "type": "User",
+          "desc": "Your opponent"
+        }
+      }
+    },
+    {
+      "name": "ball_pos",
+      "desc": "New ball position",
+      "data": {
+        "type": "Ball",
+        "desc": "New ball object (with update position)"
+      }
+    },
+    {
+      "name": "player_pos",
+      "desc": "New player position",
+      "data": {
+        "you": {
+          "type": "Obstacle",
+          "desc": "Your new position"
+        },
+        "opponent": {
+          "type": "Obstacle",
+          "desc": "Opponent's new position"
+        }
+      }
+    },
+    {
+      "name": "score",
+      "desc": "Score has changed",
+      "data": {
+        "you": {
+          "type": "number",
+          "desc": "Your score"
+        },
+        "opponent": {
+          "type": "number",
+          "desc": "Your opponent's score"
+        }
+      }
+    },
+    {
+      "name": "finish",
+      "desc": "Game finished",
+      "data": {
+        "winner": {
+          "type": " 'you' | 'opponent' ",
+          "desc": "Who won"
+        },
+        "reason": {
+          "type": " 'won' | 'disconnect' ",
+          "desc": "Reason for game finish"
+        }
+      }
+    }
+  ],
+  "receives": [
+    {
+      "name": "search",
+      "desc": "Player is searching for a new game",
+      "data": "none"
+    },
+    {
+      "name": "player_input",
+      "desc": "Player input",
+      "data": {
+        "desc": "All keyboard inputs",
+        "type": "Keyboard"
+      }
+    }
+  ]
+}

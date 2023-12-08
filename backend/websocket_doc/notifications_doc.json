@@ -1,0 +1,193 @@
+{
+  "emits": [
+    {
+      "name": "conv_create",
+      "desc": "A new conversation has been created",
+      "data": {
+        "conversation": {
+          "type": "Conversation",
+          "desc": "The created conversation"
+        }
+      }
+    },
+    {
+      "name": "conv_delete",
+      "desc": "A conversation has been deleted",
+      "data": {
+        "conversation": {
+          "type": "Conversation",
+          "desc": "The deleted conversation"
+        }
+      }
+    },
+    {
+      "name": "conv_join",
+      "desc": "A user has joined a conversation",
+      "data": {
+        "conversation": {
+          "type": "Conversation",
+          "desc": "The conversation the user joined"
+        },
+        "user": {
+          "type": "User",
+          "desc": "The user"
+        }
+      }
+    },
+    {
+      "name": "conv_leave",
+      "desc": "A user has left a conversation",
+      "data": {
+        "conversation": {
+          "type": "Conversation",
+          "desc": "The conversation the user left"
+        },
+        "user": {
+          "type": "User",
+          "desc": "The user"
+        }
+      }
+    },
+    {
+      "name": "conv_promote",
+      "desc": "A user has been promoted to admin",
+      "data": {
+        "conversation": {
+          "type": "Conversation",
+          "desc": "The conversation"
+        },
+        "user": {
+          "type": "User",
+          "desc": "The user"
+        }
+      }
+    },
+    {
+      "name": "conv_kick",
+      "desc": "A user has been kicked",
+      "data": {
+        "conversation": {
+          "type": "Conversation",
+          "desc": "The conversation"
+        },
+        "user": {
+          "type": "User",
+          "desc": "The user"
+        },
+        "issuer": {
+          "type": "User",
+          "desc": "The admin who kicked the user"
+        }
+      }
+    },
+    {
+      "name": "conv_mute",
+      "desc": "A user has been muted",
+      "data": {
+        "conversation": {
+          "type": "Conversation",
+          "desc": "The conversation"
+        },
+        "user": {
+          "type": "User",
+          "desc": "The user"
+        },
+        "issuer": {
+          "type": "User",
+          "desc": "The admin who muted the user"
+        }
+      }
+    },
+    {
+      "name": "friend_request_recv",
+      "desc": "A user has sent you a friend invite",
+      "data": {
+        "req": {
+          "type": "FriendRequest",
+          "desc": "The friend request object"
+        }
+      }
+    },
+    {
+      "name": "friend_request_accepted",
+      "desc": "A user has accepted a friend invite you sent",
+      "data": {
+        "req": {
+          "type": "FriendRequest",
+          "desc": "The friend request object"
+        }
+      }
+    },
+    {
+      "name": "friend_request_denied",
+      "desc": "A user has denied a friend invite you sent",
+      "data": {
+        "req": {
+          "type": "FriendRequest",
+          "desc": "The friend request object"
+        }
+      }
+    },
+    {
+      "name": "friend_new",
+      "desc": "You have a new friend !",
+      "data": {
+        "user": {
+          "type": "User",
+          "desc": "The new friend"
+        }
+      }
+    },
+    {
+      "name": "friend_delete",
+      "desc": "You lost a friend :(",
+      "data": {
+        "user": {
+          "type": "User",
+          "desc": "The friend you lost :("
+        }
+      }
+    },
+    {
+      "name": "blocked_new",
+      "desc": "You blocked someone !",
+      "data": {
+        "user": {
+          "type": "User",
+          "desc": "The user you blocked"
+        }
+      }
+    },
+    {
+      "name": "blocked_delete",
+      "desc": "You unblocked someone ! :)",
+      "data": {
+        "user": {
+          "type": "User",
+          "desc": "The user you unblocked"
+        }
+      }
+    },
+    {
+      "name": "play_request_recv",
+      "desc": "Someone wants to play with you !",
+      "data": {
+        "req": {
+          "type": "PlayRequest",
+          "desc": "The play request object"
+        }
+      }
+    },
+    {
+      "name": "play_request_accepted",
+      "desc": "The user you invited wants to play with you !",
+      "data": {
+        "req": {
+          "type": "PlayRequest",
+          "desc": "The play request object"
+        }
+      }
+    }
+  ],
+  "receives": []
+}
